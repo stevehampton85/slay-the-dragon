@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Dragon Quest</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts for Retro Pixel Look -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <header class="game-header">
         <div class="mascot-area">
-            <!-- Placeholder for Sparx/Dragon Sprite -->
-            <div id="sparx-status" class="status-good"></div>
+            <!-- CSS Animated Sparx Character -->
+            <div id="sparx-sprite" class="floating-sparx">
+                <div class="sparx-wings"></div>
+            </div>
         </div>
         <div class="gem-counter">
             <span class="gem-icon">💎</span>
@@ -22,7 +23,7 @@
     </header>
 
     <main id="quest-log">
-        <h2>Active Quests</h2>
+        <h2 class="section-title">Active Quests</h2>
         <div id="loading">Loading realms...</div>
         <ul id="task-list"></ul>
     </main>
