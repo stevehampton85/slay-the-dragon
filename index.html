@@ -12,13 +12,42 @@
     <div id="app-container">
         
         <header class="game-header">
-            <div class="stats-left">
-                <div class="streak-tracker">🔥 Streak: <span id="streak-count">7</span></div>
-                <div class="shield-tracker">🛡️ Shields: <span id="shield-count">2</span></div>
+            <div class="meta-stats">
+                <div class="streak-tracker">
+                    <span class="stat-label">WEEKLY STREAK</span>
+                    <div class="streak-dots">
+                        <div class="dot active">S</div>
+                        <div class="dot active">M</div>
+                        <div class="dot active">T</div>
+                        <div class="dot active">W</div>
+                        <div class="dot">T</div>
+                        <div class="dot">F</div>
+                        <div class="dot">S</div>
+                    </div>
+                </div>
+                
+                <div class="shield-inventory">
+                    <span class="stat-label">SHIELDS</span>
+                    <div class="shield-icons">
+                        <span class="shield active">🛡️</span>
+                        <span class="shield active">🛡️</span>
+                        <span class="shield broken">⚠️</span>
+                    </div>
+                </div>
             </div>
-            <div class="gem-counter">
-                <span class="gem-icon">💎</span>
-                <span id="total-gems">0</span>
+
+            <div class="daily-status">
+                <div class="progress-container">
+                    <span class="stat-label">DAILY QUESTS</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+                
+                <div class="gem-counter">
+                    <span class="gem-icon">💎</span>
+                    <span id="total-gems">0</span>
+                </div>
             </div>
         </header>
 
