@@ -1,0 +1,79 @@
+:root {
+    --spyro-purple: #6a1b9a;
+    --dragon-gold: #ffb300;
+    --sparx-green: #76ff03;
+    --bg-dark: #121212;
+    --text-light: #e0e0e0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Press Start 2P', cursive; /* 8-bit font */
+    margin: 0;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--spyro-purple);
+    padding: 15px;
+    border: 4px solid var(--dragon-gold);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.gem-counter {
+    font-size: 20px;
+    color: var(--dragon-gold);
+    text-shadow: 2px 2px 0px #000;
+}
+
+#quest-log h2 {
+    color: var(--sparx-green);
+    text-shadow: 2px 2px #000;
+    font-size: 16px;
+    text-align: center;
+}
+
+.quest-card {
+    background: #2a2a2a;
+    border: 3px solid #555;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.quest-title {
+    font-size: 12px;
+    color: var(--dragon-gold);
+    margin-bottom: 10px;
+}
+
+.quest-details {
+    font-size: 10px;
+    font-family: sans-serif; /* Readable font for long text */
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.btn-complete {
+    background: var(--spyro-purple);
+    color: white;
+    border: 2px solid var(--dragon-gold);
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-complete:active {
+    background: var(--dragon-gold);
+    color: var(--spyro-purple);
+}
