@@ -9,33 +9,35 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <header class="game-header">
-        <div class="stats-left">
-            <div class="streak-tracker">🔥 Streak: <span id="streak-count">7</span></div>
-            <div class="shield-tracker">🛡️ Shields: <span id="shield-count">2</span></div>
+    <div id="app-container">
+        
+        <header class="game-header">
+            <div class="stats-left">
+                <div class="streak-tracker">🔥 Streak: <span id="streak-count">7</span></div>
+                <div class="shield-tracker">🛡️ Shields: <span id="shield-count">2</span></div>
+            </div>
+            <div class="gem-counter">
+                <span class="gem-icon">💎</span>
+                <span id="total-gems">0</span>
+            </div>
+        </header>
+
+        <div class="character-stage">
+            <img src="spyro.gif" alt="Spyro" id="spyro-character" onerror="this.style.display='none'">
+            <div id="sparx-sprite" class="floating-sparx"></div>
         </div>
-        <div class="gem-counter">
-            <span class="gem-icon">💎</span>
-            <span id="total-gems">0</span>
+
+        <main id="quest-log">
+            <h2 class="section-title">Active Realms</h2>
+            <div id="loading">Loading realms...</div>
+            <ul id="task-list"></ul>
+        </main>
+
+        <div id="celebration-popup" class="hidden">
+            <h1 class="popup-title">QUEST CLEARED!</h1>
+            <div class="popup-gems">+<span id="popup-amount">0</span> GEMS</div>
         </div>
-    </header>
 
-    <div class="character-stage">
-        <!-- Add a transparent Spyro running or idling GIF to your folder and name it spyro.gif -->
-        <img src="spyro.gif" alt="Spyro" id="spyro-character" onerror="this.style.display='none'">
-        <div id="sparx-sprite" class="floating-sparx"></div>
-    </div>
-
-    <main id="quest-log">
-        <h2 class="section-title">Active Realms</h2>
-        <div id="loading">Loading realms...</div>
-        <ul id="task-list"></ul>
-    </main>
-
-    <!-- Hidden Celebration Overlay -->
-    <div id="celebration-popup" class="hidden">
-        <h1 class="popup-title">QUEST CLEARED!</h1>
-        <div class="popup-gems">+<span id="popup-amount">0</span> GEMS</div>
     </div>
 
     <script src="app.js"></script>
